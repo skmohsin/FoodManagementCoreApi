@@ -1,0 +1,83 @@
+{
+  "format": 1,
+  "restore": {
+    "D:\\PRACTICE\\FoodManagementCore\\FoodManagementCore\\FoodManagementCore.csproj": {}
+  },
+  "projects": {
+    "D:\\PRACTICE\\FoodManagementCore\\FoodManagementCore\\FoodManagementCore.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\PRACTICE\\FoodManagementCore\\FoodManagementCore\\FoodManagementCore.csproj",
+        "projectName": "FoodManagementCore",
+        "projectPath": "D:\\PRACTICE\\FoodManagementCore\\FoodManagementCore\\FoodManagementCore.csproj",
+        "packagesPath": "C:\\Users\\Shaikh.SHAIKHM-PC-148\\.nuget\\packages\\",
+        "outputPath": "D:\\PRACTICE\\FoodManagementCore\\FoodManagementCore\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Shaikh.SHAIKHM-PC-148\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp2.2"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp2.2": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp2.2": {
+          "dependencies": {
+            "EntityFramework": {
+              "target": "Package",
+              "version": "[6.2.0, )"
+            },
+            "Microsoft.AspNetCore.App": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.2.0, )",
+              "autoReferenced": true
+            },
+            "Microsoft.AspNetCore.Razor.Design": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[2.2.4, )"
+            },
+            "Microsoft.NETCore.App": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.2.0, )",
+              "autoReferenced": true
+            },
+            "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
+              "target": "Package",
+              "version": "[2.2.3, )"
+            }
+          },
+          "imports": [
+            "net461"
+          ],
+          "assetTargetFallback": true,
+          "warn": true
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,689 @@
+info: Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager[0]
+      User profile is available. Using 'C:\Users\Shaikh.SHAIKHM-PC-148\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+Hosting environment: Development
+Content root path: D:\PRACTICE\FoodManagementCore\FoodManagementCore
+Application started. Press Ctrl+C to shut down.
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/2.0 GET https://localhost:44364/api/values  
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[0]
+      Executing endpoint 'FoodManagementCore.Controllers.ValuesController.Get (FoodManagementCore)'
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[1]
+      Route matched with {action = "Get", controller = "Values"}. Executing action FoodManagementCore.Controllers.ValuesController.Get (FoodManagementCore)
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[1]
+      Executing action method FoodManagementCore.Controllers.ValuesController.Get (FoodManagementCore) - Validation state: Valid
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[2]
+      Executed action method FoodManagementCore.Controllers.ValuesController.Get (FoodManagementCore), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 0.3306ms.
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor[1]
+      Executing ObjectResult, writing value of type 'System.String[]'.
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[2]
+      Executed action FoodManagementCore.Controllers.ValuesController.Get (FoodManagementCore) in 94.3021ms
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
+      Executed endpoint 'FoodManagementCore.Controllers.ValuesController.Get (FoodManagementCore)'
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 295.5054ms 200 application/json; charset=utf-8
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/2.0 GET https://localhost:44364/favicon.ico  
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 7.5659ms 404 
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/2.0 OPTIONS https://localhost:44364/api/user  
+warn: Microsoft.AspNetCore.Cors.Infrastructure.CorsService[11]
+      The CORS protocol does not allow specifying a wildcard (any) origin and credentials at the same time. Configure the policy by listing individual origins if credentials needs to be supported.
+info: Microsoft.AspNetCore.Cors.Infrastructure.CorsService[4]
+      CORS policy execution successful.
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 15.2667ms 204 
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/2.0 POST https://localhost:44364/api/user application/json 48
+warn: Microsoft.AspNetCore.Cors.Infrastructure.CorsService[11]
+      The CORS protocol does not allow specifying a wildcard (any) origin and credentials at the same time. Configure the policy by listing individual origins if credentials needs to be supported.
+info: Microsoft.AspNetCore.Cors.Infrastructure.CorsService[4]
+      CORS policy execution successful.
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[0]
+      Executing endpoint 'FoodManagementCore.Controllers.UserController.Authenticate (FoodManagementCore)'
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[1]
+      Route matched with {action = "Authenticate", controller = "User"}. Executing action FoodManagementCore.Controllers.UserController.Authenticate (FoodManagementCore)
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[1]
+      Executing action method FoodManagementCore.Controllers.UserController.Authenticate (FoodManagementCore) with arguments (FoodManagementCore.Models.User) - Validation state: Valid
+warn: Microsoft.EntityFrameworkCore.Model.Validation[30000]
+      No type was specified for the decimal column 'Price' on entity type 'Food'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+info: Microsoft.EntityFrameworkCore.Infrastructure[10403]
+      Entity Framework Core 2.2.4-servicing-10062 initialized 'FoodManagementContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (60ms) [Parameters=[@__user_Email_0='?' (Size = 4000), @__user_Password_1='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+      SELECT TOP(2) [x].[UserID], [x].[Email], [x].[IsActive], [x].[Mobile], [x].[Name], [x].[Password], [x].[Picture], [x].[Role]
+      FROM [User] AS [x]
+      WHERE ([x].[Email] = @__user_Email_0) AND ([x].[Password] = @__user_Password_1)
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[2]
+      Executed action method FoodManagementCore.Controllers.UserController.Authenticate (FoodManagementCore), returned result Microsoft.AspNetCore.Mvc.UnauthorizedResult in 1846.0068ms.
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor[1]
+      Executing ObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ProblemDetails'.
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[2]
+      Executed action FoodManagementCore.Controllers.UserController.Authenticate (FoodManagementCore) in 2714.5727ms
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
+      Executed endpoint 'FoodManagementCore.Controllers.UserController.Authenticate (FoodManagementCore)'
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 2757.8927ms 401 application/problem+json; charset=utf-8
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/2.0 OPTIONS https://localhost:44364/api/user  
+warn: Microsoft.AspNetCore.Cors.Infrastructure.CorsService[11]
+      The CORS protocol does not allow specifying a wildcard (any) origin and credentials at the same time. Configure the policy by listing individual origins if credentials needs to be supported.
+info: Microsoft.AspNetCore.Cors.Infrastructure.CorsService[4]
+      CORS policy execution successful.
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 7.2086ms 204 
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/2.0 POST https://localhost:44364/api/user application/json 45
+warn: Microsoft.AspNetCore.Cors.Infrastructure.CorsService[11]
+      The CORS protocol does not allow specifying a wildcard (any) origin and credentials at the same time. Configure the policy by listing individual origins if credentials needs to be supported.
+info: Microsoft.AspNetCore.Cors.Infrastructure.CorsService[4]
+      CORS policy execution successful.
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[0]
+      Executing endpoint 'FoodManagementCore.Controllers.UserController.Authenticate (FoodManagementCore)'
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[1]
+      Route matched with {action = "Authenticate", controller = "User"}. Executing action FoodManagementCore.Controllers.UserController.Authenticate (FoodManagementCore)
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[1]
+      Executing action method FoodManagementCore.Controllers.UserController.Authenticate (FoodManagementCore) with arguments (FoodManagementCore.Models.User) - Validation state: Valid
+info: Microsoft.EntityFrameworkCore.Infrastructure[10403]
+      Entity Framework Core 2.2.4-servicing-10062 initialized 'FoodManagementContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (1ms) [Parameters=[@__user_Email_0='?' (Size = 4000), @__user_Password_1='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+      SELECT TOP(2) [x].[UserID], [x].[Email], [x].[IsActive], [x].[Mobile], [x].[Name], [x].[Password], [x].[Picture], [x].[Role]
+      FROM [User] AS [x]
+      WHERE ([x].[Email] = @__user_Email_0) AND ([x].[Password] = @__user_Password_1)
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[2]
+      Executed action method FoodManagementCore.Controllers.UserController.Authenticate (FoodManagementCore), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 135.0306ms.
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor[1]
+      Executing ObjectResult, writing value of type '<>f__AnonymousType0`3[[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Boolean, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[2]
+      Executed action FoodManagementCore.Controllers.UserController.Authenticate (FoodManagementCore) in 146.3048ms
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
+      Executed endpoint 'FoodManagementCore.Controllers.UserController.Authenticate (FoodManagementCore)'
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 161.4194ms 200 application/json; charset=utf-8
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/2.0 OPTIONS https://localhost:44364/api/user  
+warn: Microsoft.AspNetCore.Cors.Infrastructure.CorsService[11]
+      The CORS protocol does not allow specifying a wildcard (any) origin and credentials at the same time. Configure the policy by listing individual origins if credentials needs to be supported.
+info: Microsoft.AspNetCore.Cors.Infrastructure.CorsService[4]
+      CORS policy execution successful.
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 7.4933ms 204 
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/2.0 GET https://localhost:44364/api/user application/json 
+warn: Microsoft.AspNetCore.Cors.Infrastructure.CorsService[11]
+      The CORS protocol does not allow specifying a wildcard (any) origin and credentials at the same time. Configure the policy by listing individual origins if credentials needs to be supported.
+info: Microsoft.AspNetCore.Cors.Infrastructure.CorsService[4]
+      CORS policy execution successful.
+info: Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler[2]
+      Successfully validated the token.
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[0]
+      Executing endpoint 'FoodManagementCore.Controllers.UserController.Get (FoodManagementCore)'
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[1]
+      Route matched with {action = "Get", controller = "User"}. Executing action FoodManagementCore.Controllers.UserController.Get (FoodManagementCore)
+info: Microsoft.AspNetCore.Authorization.DefaultAuthorizationService[1]
+      Authorization was successful.
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[1]
+      Executing action method FoodManagementCore.Controllers.UserController.Get (FoodManagementCore) - Validation state: Valid
+info: Microsoft.EntityFrameworkCore.Infrastructure[10403]
+      Entity Framework Core 2.2.4-servicing-10062 initialized 'FoodManagementContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (2ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT [u].[UserID], [u].[Email], [u].[IsActive], [u].[Mobile], [u].[Name], [u].[Password], [u].[Picture], [u].[Role]
+      FROM [User] AS [u]
+      WHERE ([u].[Role] <> N'Admin') OR [u].[Role] IS NULL
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[2]
+      Executed action method FoodManagementCore.Controllers.UserController.Get (FoodManagementCore), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 13.7421ms.
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor[1]
+      Executing ObjectResult, writing value of type '<>f__AnonymousType0`3[[System.Collections.Generic.IEnumerable`1[[FoodManagementCore.Models.User, FoodManagementCore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Boolean, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[2]
+      Executed action FoodManagementCore.Controllers.UserController.Get (FoodManagementCore) in 35.8086ms
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
+      Executed endpoint 'FoodManagementCore.Controllers.UserController.Get (FoodManagementCore)'
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 65.1798ms 200 application/json; charset=utf-8
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/2.0 GET https://localhost:44364/Images/Users/face1.jpg  
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/2.0 GET https://localhost:44364/Images/Users/face8.jpg  
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/Images/Users/face1.jpg'. Physical path: 'D:\PRACTICE\FoodManagementCore\FoodManagementCore\wwwroot\Images\Users\face1.jpg'
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 49.079ms 200 image/jpeg
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/Images/Users/face8.jpg'. Physical path: 'D:\PRACTICE\FoodManagementCore\FoodManagementCore\wwwroot\Images\Users\face8.jpg'
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 56.813ms 200 image/jpeg
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/2.0 OPTIONS https://localhost:44364/api/category  
+warn: Microsoft.AspNetCore.Cors.Infrastructure.CorsService[11]
+      The CORS protocol does not allow specifying a wildcard (any) origin and credentials at the same time. Configure the policy by listing individual origins if credentials needs to be supported.
+info: Microsoft.AspNetCore.Cors.Infrastructure.CorsService[4]
+      CORS policy execution successful.
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 8.8089ms 204 
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/2.0 GET https://localhost:44364/api/category application/json 
+warn: Microsoft.AspNetCore.Cors.Infrastructure.CorsService[11]
+      The CORS protocol does not allow specifying a wildcard (any) origin and credentials at the same time. Configure the policy by listing individual origins if credentials needs to be supported.
+info: Microsoft.AspNetCore.Cors.Infrastructure.CorsService[4]
+      CORS policy execution successful.
+info: Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler[2]
+      Successfully validated the token.
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[0]
+      Executing endpoint 'FoodManagementCore.Controllers.CategoryController.Get (FoodManagementCore)'
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[1]
+      Route matched with {action = "Get", controller = "Category"}. Executing action FoodManagementCore.Controllers.CategoryController.Get (FoodManagementCore)
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[1]
+      Executing action method FoodManagementCore.Controllers.CategoryController.Get (FoodManagementCore) - Validation state: Valid
+info: Microsoft.EntityFrameworkCore.Infrastructure[10403]
+      Entity Framework Core 2.2.4-servicing-10062 initialized 'FoodManagementContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (28ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT [c].[CategoryID], [c].[IsActive], [c].[Name]
+      FROM [Category] AS [c]
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[2]
+      Executed action method FoodManagementCore.Controllers.CategoryController.Get (FoodManagementCore), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 46.5951ms.
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor[1]
+      Executing ObjectResult, writing value of type '<>f__AnonymousType0`3[[System.Collections.Generic.IEnumerable`1[[FoodManagementCore.Models.Category, FoodManagementCore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Boolean, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[2]
+      Executed action FoodManagementCore.Controllers.CategoryController.Get (FoodManagementCore) in 57.5304ms
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
+      Executed endpoint 'FoodManagementCore.Controllers.CategoryController.Get (FoodManagementCore)'
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 79.3804ms 200 application/json; charset=utf-8
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/2.0 OPTIONS https://localhost:44364/api/food  
+warn: Microsoft.AspNetCore.Cors.Infrastructure.CorsService[11]
+      The CORS protocol does not allow specifying a wildcard (any) origin and credentials at the same time. Configure the policy by listing individual origins if credentials needs to be supported.
+info: Microsoft.AspNetCore.Cors.Infrastructure.CorsService[4]
+      CORS policy execution successful.
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 8.9059ms 204 
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/2.0 GET https://localhost:44364/api/food application/json 
+warn: Microsoft.AspNetCore.Cors.Infrastructure.CorsService[11]
+      The CORS protocol does not allow specifying a wildcard (any) origin and credentials at the same time. Configure the policy by listing individual origins if credentials needs to be supported.
+info: Microsoft.AspNetCore.Cors.Infrastructure.CorsService[4]
+      CORS policy execution successful.
+info: Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler[2]
+      Successfully validated the token.
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[0]
+      Executing endpoint '405 HTTP Method Not Supported'
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
+      Executed endpoint '405 HTTP Method Not Supported'
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 15.6966ms 405 
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/2.0 OPTIONS https://localhost:44364/api/category  
+warn: Microsoft.AspNetCore.Cors.Infrastructure.CorsService[11]
+      The CORS protocol does not allow specifying a wildcard (any) origin and credentials at the same time. Configure the policy by listing individual origins if credentials needs to be supported.
+info: Microsoft.AspNetCore.Cors.Infrastructure.CorsService[4]
+      CORS policy execution successful.
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 8.1886ms 204 
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/2.0 GET https://localhost:44364/api/category application/json 
+warn: Microsoft.AspNetCore.Cors.Infrastructure.CorsService[11]
+      The CORS protocol does not allow specifying a wildcard (any) origin and credentials at the same time. Configure the policy by listing individual origins if credentials needs to be supported.
+info: Microsoft.AspNetCore.Cors.Infrastructure.CorsService[4]
+      CORS policy execution successful.
+info: Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler[2]
+      Successfully validated the token.
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[0]
+      Executing endpoint 'FoodManagementCore.Controllers.CategoryController.Get (FoodManagementCore)'
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[1]
+      Route matched with {action = "Get", controller = "Category"}. Executing action FoodManagementCore.Controllers.CategoryController.Get (FoodManagementCore)
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[1]
+      Executing action method FoodManagementCore.Controllers.CategoryController.Get (FoodManagementCore) - Validation state: Valid
+info: Microsoft.EntityFrameworkCore.Infrastructure[10403]
+      Entity Framework Core 2.2.4-servicing-10062 initialized 'FoodManagementContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT [c].[CategoryID], [c].[IsActive], [c].[Name]
+      FROM [Category] AS [c]
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[2]
+      Executed action method FoodManagementCore.Controllers.CategoryController.Get (FoodManagementCore), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 4.3635ms.
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor[1]
+      Executing ObjectResult, writing value of type '<>f__AnonymousType0`3[[System.Collections.Generic.IEnumerable`1[[FoodManagementCore.Models.Category, FoodManagementCore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Boolean, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[2]
+      Executed action FoodManagementCore.Controllers.CategoryController.Get (FoodManagementCore) in 10.195ms
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
+      Executed endpoint 'FoodManagementCore.Controllers.CategoryController.Get (FoodManagementCore)'
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 26.8467ms 200 application/json; charset=utf-8
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/2.0 OPTIONS https://localhost:44364/api/user  
+warn: Microsoft.AspNetCore.Cors.Infrastructure.CorsService[11]
+      The CORS protocol does not allow specifying a wildcard (any) origin and credentials at the same time. Configure the policy by listing individual origins if credentials needs to be supported.
+info: Microsoft.AspNetCore.Cors.Infrastructure.CorsService[4]
+      CORS policy execution successful.
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 7.6932ms 204 
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/2.0 GET https://localhost:44364/api/user application/json 
+warn: Microsoft.AspNetCore.Cors.Infrastructure.CorsService[11]
+      The CORS protocol does not allow specifying a wildcard (any) origin and credentials at the same time. Configure the policy by listing individual origins if credentials needs to be supported.
+info: Microsoft.AspNetCore.Cors.Infrastructure.CorsService[4]
+      CORS policy execution successful.
+info: Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler[2]
+      Successfully validated the token.
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[0]
+      Executing endpoint 'FoodManagementCore.Controllers.UserController.Get (FoodManagementCore)'
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[1]
+      Route matched with {action = "Get", controller = "User"}. Executing action FoodManagementCore.Controllers.UserController.Get (FoodManagementCore)
+info: Microsoft.AspNetCore.Authorization.DefaultAuthorizationService[1]
+      Authorization was successful.
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[1]
+      Executing action method FoodManagementCore.Controllers.UserController.Get (FoodManagementCore) - Validation state: Valid
+info: Microsoft.EntityFrameworkCore.Infrastructure[10403]
+      Entity Framework Core 2.2.4-servicing-10062 initialized 'FoodManagementContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT [u].[UserID], [u].[Email], [u].[IsActive], [u].[Mobile], [u].[Name], [u].[Password], [u].[Picture], [u].[Role]
+      FROM [User] AS [u]
+      WHERE ([u].[Role] <> N'Admin') OR [u].[Role] IS NULL
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[2]
+      Executed action method FoodManagementCore.Controllers.UserController.Get (FoodManagementCore), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 6.1907ms.
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor[1]
+      Executing ObjectResult, writing value of type '<>f__AnonymousType0`3[[System.Collections.Generic.IEnumerable`1[[FoodManagementCore.Models.User, FoodManagementCore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Boolean, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[2]
+      Executed action FoodManagementCore.Controllers.UserController.Get (FoodManagementCore) in 14.2689ms
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
+      Executed endpoint 'FoodManagementCore.Controllers.UserController.Get (FoodManagementCore)'
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 32.0655ms 200 application/json; charset=utf-8
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/2.0 OPTIONS https://localhost:44364/api/food  
+warn: Microsoft.AspNetCore.Cors.Infrastructure.CorsService[11]
+      The CORS protocol does not allow specifying a wildcard (any) origin and credentials at the same time. Configure the policy by listing individual origins if credentials needs to be supported.
+info: Microsoft.AspNetCore.Cors.Infrastructure.CorsService[4]
+      CORS policy execution successful.
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 7.4221ms 204 
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/2.0 GET https://localhost:44364/api/food application/json 
+warn: Microsoft.AspNetCore.Cors.Infrastructure.CorsService[11]
+      The CORS protocol does not allow specifying a wildcard (any) origin and credentials at the same time. Configure the policy by listing individual origins if credentials needs to be supported.
+info: Microsoft.AspNetCore.Cors.Infrastructure.CorsService[4]
+      CORS policy execution successful.
+info: Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler[2]
+      Successfully validated the token.
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[0]
+      Executing endpoint '405 HTTP Method Not Supported'
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
+      Executed endpoint '405 HTTP Method Not Supported'
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 15.4326ms 405 
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/2.0 OPTIONS https://localhost:44364/api/category  
+warn: Microsoft.AspNetCore.Cors.Infrastructure.CorsService[11]
+      The CORS protocol does not allow specifying a wildcard (any) origin and credentials at the same time. Configure the policy by listing individual origins if credentials needs to be supported.
+info: Microsoft.AspNetCore.Cors.Infrastructure.CorsService[4]
+      CORS policy execution successful.
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 6.827ms 204 
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/2.0 GET https://localhost:44364/api/category application/json 
+warn: Microsoft.AspNetCore.Cors.Infrastructure.CorsService[11]
+      The CORS protocol does not allow specifying a wildcard (any) origin and credentials at the same time. Configure the policy by listing individual origins if credentials needs to be supported.
+info: Microsoft.AspNetCore.Cors.Infrastructure.CorsService[4]
+      CORS policy execution successful.
+info: Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler[2]
+      Successfully validated the token.
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[0]
+      Executing endpoint 'FoodManagementCore.Controllers.CategoryController.Get (FoodManagementCore)'
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[1]
+      Route matched with {action = "Get", controller = "Category"}. Executing action FoodManagementCore.Controllers.CategoryController.Get (FoodManagementCore)
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[1]
+      Executing action method FoodManagementCore.Controllers.CategoryController.Get (FoodManagementCore) - Validation state: Valid
+info: Microsoft.EntityFrameworkCore.Infrastructure[10403]
+      Entity Framework Core 2.2.4-servicing-10062 initialized 'FoodManagementContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT [c].[CategoryID], [c].[IsActive], [c].[Name]
+      FROM [Category] AS [c]
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[2]
+      Executed action method FoodManagementCore.Controllers.CategoryController.Get (FoodManagementCore), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 5.9392ms.
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor[1]
+      Executing ObjectResult, writing value of type '<>f__AnonymousType0`3[[System.Collections.Generic.IEnumerable`1[[FoodManagementCore.Models.Category, FoodManagementCore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Boolean, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[2]
+      Executed action FoodManagementCore.Controllers.CategoryController.Get (FoodManagementCore) in 12.8605ms
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
+      Executed endpoint 'FoodManagementCore.Controllers.CategoryController.Get (FoodManagementCore)'
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 30.7294ms 200 application/json; charset=utf-8
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/2.0 OPTIONS https://localhost:44364/api/user  
+warn: Microsoft.AspNetCore.Cors.Infrastructure.CorsService[11]
+      The CORS protocol does not allow specifying a wildcard (any) origin and credentials at the same time. Configure the policy by listing individual origins if credentials needs to be supported.
+info: Microsoft.AspNetCore.Cors.Infrastructure.CorsService[4]
+      CORS policy execution successful.
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 8.797ms 204 
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/2.0 GET https://localhost:44364/api/user application/json 
+warn: Microsoft.AspNetCore.Cors.Infrastructure.CorsService[11]
+      The CORS protocol does not allow specifying a wildcard (any) origin and credentials at the same time. Configure the policy by listing individual origins if credentials needs to be supported.
+info: Microsoft.AspNetCore.Cors.Infrastructure.CorsService[4]
+      CORS policy execution successful.
+info: Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler[2]
+      Successfully validated the token.
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[0]
+      Executing endpoint 'FoodManagementCore.Controllers.UserController.Get (FoodManagementCore)'
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[1]
+      Route matched with {action = "Get", controller = "User"}. Executing action FoodManagementCore.Controllers.UserController.Get (FoodManagementCore)
+info: Microsoft.AspNetCore.Authorization.DefaultAuthorizationService[1]
+      Authorization was successful.
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[1]
+      Executing action method FoodManagementCore.Controllers.UserController.Get (FoodManagementCore) - Validation state: Valid
+info: Microsoft.EntityFrameworkCore.Infrastructure[10403]
+      Entity Framework Core 2.2.4-servicing-10062 initialized 'FoodManagementContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT [u].[UserID], [u].[Email], [u].[IsActive], [u].[Mobile], [u].[Name], [u].[Password], [u].[Picture], [u].[Role]
+      FROM [User] AS [u]
+      WHERE ([u].[Role] <> N'Admin') OR [u].[Role] IS NULL
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[2]
+      Executed action method FoodManagementCore.Controllers.UserController.Get (FoodManagementCore), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 4.2074ms.
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor[1]
+      Executing ObjectResult, writing value of type '<>f__AnonymousType0`3[[System.Collections.Generic.IEnumerable`1[[FoodManagementCore.Models.User, FoodManagementCore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Boolean, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[2]
+      Executed action FoodManagementCore.Controllers.UserController.Get (FoodManagementCore) in 12.6476ms
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
+      Executed endpoint 'FoodManagementCore.Controllers.UserController.Get (FoodManagementCore)'
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 29.2466ms 200 application/json; charset=utf-8
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/2.0 OPTIONS https://localhost:44364/api/category  
+warn: Microsoft.AspNetCore.Cors.Infrastructure.CorsService[11]
+      The CORS protocol does not allow specifying a wildcard (any) origin and credentials at the same time. Configure the policy by listing individual origins if credentials needs to be supported.
+info: Microsoft.AspNetCore.Cors.Infrastructure.CorsService[4]
+      CORS policy execution successful.
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 10.4401ms 204 
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/2.0 GET https://localhost:44364/api/category application/json 
+warn: Microsoft.AspNetCore.Cors.Infrastructure.CorsService[11]
+      The CORS protocol does not allow specifying a wildcard (any) origin and credentials at the same time. Configure the policy by listing individual origins if credentials needs to be supported.
+info: Microsoft.AspNetCore.Cors.Infrastructure.CorsService[4]
+      CORS policy execution successful.
+info: Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler[2]
+      Successfully validated the token.
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[0]
+      Executing endpoint 'FoodManagementCore.Controllers.CategoryController.Get (FoodManagementCore)'
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[1]
+      Route matched with {action = "Get", controller = "Category"}. Executing action FoodManagementCore.Controllers.CategoryController.Get (FoodManagementCore)
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[1]
+      Executing action method FoodManagementCore.Controllers.CategoryController.Get (FoodManagementCore) - Validation state: Valid
+info: Microsoft.EntityFrameworkCore.Infrastructure[10403]
+      Entity Framework Core 2.2.4-servicing-10062 initialized 'FoodManagementContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT [c].[CategoryID], [c].[IsActive], [c].[Name]
+      FROM [Category] AS [c]
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[2]
+      Executed action method FoodManagementCore.Controllers.CategoryController.Get (FoodManagementCore), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 8.9154ms.
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor[1]
+      Executing ObjectResult, writing value of type '<>f__AnonymousType0`3[[System.Collections.Generic.IEnumerable`1[[FoodManagementCore.Models.Category, FoodManagementCore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Boolean, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[2]
+      Executed action FoodManagementCore.Controllers.CategoryController.Get (FoodManagementCore) in 18.2323ms
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
+      Executed endpoint 'FoodManagementCore.Controllers.CategoryController.Get (FoodManagementCore)'
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 34.868ms 200 application/json; charset=utf-8
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/2.0 OPTIONS https://localhost:44364/api/user  
+warn: Microsoft.AspNetCore.Cors.Infrastructure.CorsService[11]
+      The CORS protocol does not allow specifying a wildcard (any) origin and credentials at the same time. Configure the policy by listing individual origins if credentials needs to be supported.
+info: Microsoft.AspNetCore.Cors.Infrastructure.CorsService[4]
+      CORS policy execution successful.
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 14.5739ms 204 
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/2.0 GET https://localhost:44364/api/user application/json 
+warn: Microsoft.AspNetCore.Cors.Infrastructure.CorsService[11]
+      The CORS protocol does not allow specifying a wildcard (any) origin and credentials at the same time. Configure the policy by listing individual origins if credentials needs to be supported.
+info: Microsoft.AspNetCore.Cors.Infrastructure.CorsService[4]
+      CORS policy execution successful.
+info: Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler[2]
+      Successfully validated the token.
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[0]
+      Executing endpoint 'FoodManagementCore.Controllers.UserController.Get (FoodManagementCore)'
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[1]
+      Route matched with {action = "Get", controller = "User"}. Executing action FoodManagementCore.Controllers.UserController.Get (FoodManagementCore)
+info: Microsoft.AspNetCore.Authorization.DefaultAuthorizationService[1]
+      Authorization was successful.
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[1]
+      Executing action method FoodManagementCore.Controllers.UserController.Get (FoodManagementCore) - Validation state: Valid
+info: Microsoft.EntityFrameworkCore.Infrastructure[10403]
+      Entity Framework Core 2.2.4-servicing-10062 initialized 'FoodManagementContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT [u].[UserID], [u].[Email], [u].[IsActive], [u].[Mobile], [u].[Name], [u].[Password], [u].[Picture], [u].[Role]
+      FROM [User] AS [u]
+      WHERE ([u].[Role] <> N'Admin') OR [u].[Role] IS NULL
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[2]
+      Executed action method FoodManagementCore.Controllers.UserController.Get (FoodManagementCore), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 4.7858ms.
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor[1]
+      Executing ObjectResult, writing value of type '<>f__AnonymousType0`3[[System.Collections.Generic.IEnumerable`1[[FoodManagementCore.Models.User, FoodManagementCore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Boolean, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[2]
+      Executed action FoodManagementCore.Controllers.UserController.Get (FoodManagementCore) in 12.2946ms
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
+      Executed endpoint 'FoodManagementCore.Controllers.UserController.Get (FoodManagementCore)'
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 28.4258ms 200 application/json; charset=utf-8
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/2.0 GET https://localhost:44364/api/category application/json 
+warn: Microsoft.AspNetCore.Cors.Infrastructure.CorsService[11]
+      The CORS protocol does not allow specifying a wildcard (any) origin and credentials at the same time. Configure the policy by listing individual origins if credentials needs to be supported.
+info: Microsoft.AspNetCore.Cors.Infrastructure.CorsService[4]
+      CORS policy execution successful.
+info: Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler[2]
+      Successfully validated the token.
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[0]
+      Executing endpoint 'FoodManagementCore.Controllers.CategoryController.Get (FoodManagementCore)'
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[1]
+      Route matched with {action = "Get", controller = "Category"}. Executing action FoodManagementCore.Controllers.CategoryController.Get (FoodManagementCore)
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[1]
+      Executing action method FoodManagementCore.Controllers.CategoryController.Get (FoodManagementCore) - Validation state: Valid
+info: Microsoft.EntityFrameworkCore.Infrastructure[10403]
+      Entity Framework Core 2.2.4-servicing-10062 initialized 'FoodManagementContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT [c].[CategoryID], [c].[IsActive], [c].[Name]
+      FROM [Category] AS [c]
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[2]
+      Executed action method FoodManagementCore.Controllers.CategoryController.Get (FoodManagementCore), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 5.9496ms.
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor[1]
+      Executing ObjectResult, writing value of type '<>f__AnonymousType0`3[[System.Collections.Generic.IEnumerable`1[[FoodManagementCore.Models.Category, FoodManagementCore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Boolean, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[2]
+      Executed action FoodManagementCore.Controllers.CategoryController.Get (FoodManagementCore) in 12.442ms
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
+      Executed endpoint 'FoodManagementCore.Controllers.CategoryController.Get (FoodManagementCore)'
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 31.9533ms 200 application/json; charset=utf-8
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/2.0 OPTIONS https://localhost:44364/api/user  
+warn: Microsoft.AspNetCore.Cors.Infrastructure.CorsService[11]
+      The CORS protocol does not allow specifying a wildcard (any) origin and credentials at the same time. Configure the policy by listing individual origins if credentials needs to be supported.
+info: Microsoft.AspNetCore.Cors.Infrastructure.CorsService[4]
+      CORS policy execution successful.
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 11.1923ms 204 
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/2.0 GET https://localhost:44364/api/user application/json 
+warn: Microsoft.AspNetCore.Cors.Infrastructure.CorsService[11]
+      The CORS protocol does not allow specifying a wildcard (any) origin and credentials at the same time. Configure the policy by listing individual origins if credentials needs to be supported.
+info: Microsoft.AspNetCore.Cors.Infrastructure.CorsService[4]
+      CORS policy execution successful.
+info: Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler[2]
+      Successfully validated the token.
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[0]
+      Executing endpoint 'FoodManagementCore.Controllers.UserController.Get (FoodManagementCore)'
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[1]
+      Route matched with {action = "Get", controller = "User"}. Executing action FoodManagementCore.Controllers.UserController.Get (FoodManagementCore)
+info: Microsoft.AspNetCore.Authorization.DefaultAuthorizationService[1]
+      Authorization was successful.
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[1]
+      Executing action method FoodManagementCore.Controllers.UserController.Get (FoodManagementCore) - Validation state: Valid
+info: Microsoft.EntityFrameworkCore.Infrastructure[10403]
+      Entity Framework Core 2.2.4-servicing-10062 initialized 'FoodManagementContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT [u].[UserID], [u].[Email], [u].[IsActive], [u].[Mobile], [u].[Name], [u].[Password], [u].[Picture], [u].[Role]
+      FROM [User] AS [u]
+      WHERE ([u].[Role] <> N'Admin') OR [u].[Role] IS NULL
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[2]
+      Executed action method FoodManagementCore.Controllers.UserController.Get (FoodManagementCore), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 4.2427ms.
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor[1]
+      Executing ObjectResult, writing value of type '<>f__AnonymousType0`3[[System.Collections.Generic.IEnumerable`1[[FoodManagementCore.Models.User, FoodManagementCore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Boolean, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[2]
+      Executed action FoodManagementCore.Controllers.UserController.Get (FoodManagementCore) in 10.7138ms
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
+      Executed endpoint 'FoodManagementCore.Controllers.UserController.Get (FoodManagementCore)'
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 28.8548ms 200 application/json; charset=utf-8
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/2.0 OPTIONS https://localhost:44364/api/user  
+warn: Microsoft.AspNetCore.Cors.Infrastructure.CorsService[11]
+      The CORS protocol does not allow specifying a wildcard (any) origin and credentials at the same time. Configure the policy by listing individual origins if credentials needs to be supported.
+info: Microsoft.AspNetCore.Cors.Infrastructure.CorsService[4]
+      CORS policy execution successful.
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 5.3957ms 204 
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/2.0 POST https://localhost:44364/api/user application/json 49
+warn: Microsoft.AspNetCore.Cors.Infrastructure.CorsService[11]
+      The CORS protocol does not allow specifying a wildcard (any) origin and credentials at the same time. Configure the policy by listing individual origins if credentials needs to be supported.
+info: Microsoft.AspNetCore.Cors.Infrastructure.CorsService[4]
+      CORS policy execution successful.
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[0]
+      Executing endpoint 'FoodManagementCore.Controllers.UserController.Authenticate (FoodManagementCore)'
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[1]
+      Route matched with {action = "Authenticate", controller = "User"}. Executing action FoodManagementCore.Controllers.UserController.Authenticate (FoodManagementCore)
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[1]
+      Executing action method FoodManagementCore.Controllers.UserController.Authenticate (FoodManagementCore) with arguments (FoodManagementCore.Models.User) - Validation state: Valid
+info: Microsoft.EntityFrameworkCore.Infrastructure[10403]
+      Entity Framework Core 2.2.4-servicing-10062 initialized 'FoodManagementContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[@__user_Email_0='?' (Size = 4000), @__user_Password_1='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+      SELECT TOP(2) [x].[UserID], [x].[Email], [x].[IsActive], [x].[Mobile], [x].[Name], [x].[Password], [x].[Picture], [x].[Role]
+      FROM [User] AS [x]
+      WHERE ([x].[Email] = @__user_Email_0) AND ([x].[Password] = @__user_Password_1)
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[2]
+      Executed action method FoodManagementCore.Controllers.UserController.Authenticate (FoodManagementCore), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 4.3199ms.
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor[1]
+      Executing ObjectResult, writing value of type '<>f__AnonymousType0`3[[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Boolean, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[2]
+      Executed action FoodManagementCore.Controllers.UserController.Authenticate (FoodManagementCore) in 9.5339ms
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
+      Executed endpoint 'FoodManagementCore.Controllers.UserController.Authenticate (FoodManagementCore)'
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 21.8655ms 200 application/json; charset=utf-8
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/2.0 OPTIONS https://localhost:44364/api/user  
+warn: Microsoft.AspNetCore.Cors.Infrastructure.CorsService[11]
+      The CORS protocol does not allow specifying a wildcard (any) origin and credentials at the same time. Configure the policy by listing individual origins if credentials needs to be supported.
+info: Microsoft.AspNetCore.Cors.Infrastructure.CorsService[4]
+      CORS policy execution successful.
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 8.3155ms 204 
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/2.0 GET https://localhost:44364/api/user application/json 
+warn: Microsoft.AspNetCore.Cors.Infrastructure.CorsService[11]
+      The CORS protocol does not allow specifying a wildcard (any) origin and credentials at the same time. Configure the policy by listing individual origins if credentials needs to be supported.
+info: Microsoft.AspNetCore.Cors.Infrastructure.CorsService[4]
+      CORS policy execution successful.
+info: Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler[2]
+      Successfully validated the token.
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[0]
+      Executing endpoint 'FoodManagementCore.Controllers.UserController.Get (FoodManagementCore)'
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[1]
+      Route matched with {action = "Get", controller = "User"}. Executing action FoodManagementCore.Controllers.UserController.Get (FoodManagementCore)
+info: Microsoft.AspNetCore.Authorization.DefaultAuthorizationService[2]
+      Authorization failed.
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[3]
+      Authorization failed for the request at filter 'Microsoft.AspNetCore.Mvc.Authorization.AuthorizeFilter'.
+info: Microsoft.AspNetCore.Mvc.ForbidResult[1]
+      Executing ForbidResult with authentication schemes ().
+info: Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler[13]
+      AuthenticationScheme: Bearer was forbidden.
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[2]
+      Executed action FoodManagementCore.Controllers.UserController.Get (FoodManagementCore) in 14.9201ms
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
+      Executed endpoint 'FoodManagementCore.Controllers.UserController.Get (FoodManagementCore)'
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 35.13ms 403 
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/2.0 OPTIONS https://localhost:44364/api/category  
+warn: Microsoft.AspNetCore.Cors.Infrastructure.CorsService[11]
+      The CORS protocol does not allow specifying a wildcard (any) origin and credentials at the same time. Configure the policy by listing individual origins if credentials needs to be supported.
+info: Microsoft.AspNetCore.Cors.Infrastructure.CorsService[4]
+      CORS policy execution successful.
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 6.9388ms 204 
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/2.0 GET https://localhost:44364/api/category application/json 
+warn: Microsoft.AspNetCore.Cors.Infrastructure.CorsService[11]
+      The CORS protocol does not allow specifying a wildcard (any) origin and credentials at the same time. Configure the policy by listing individual origins if credentials needs to be supported.
+info: Microsoft.AspNetCore.Cors.Infrastructure.CorsService[4]
+      CORS policy execution successful.
+info: Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler[2]
+      Successfully validated the token.
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[0]
+      Executing endpoint 'FoodManagementCore.Controllers.CategoryController.Get (FoodManagementCore)'
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[1]
+      Route matched with {action = "Get", controller = "Category"}. Executing action FoodManagementCore.Controllers.CategoryController.Get (FoodManagementCore)
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[1]
+      Executing action method FoodManagementCore.Controllers.CategoryController.Get (FoodManagementCore) - Validation state: Valid
+info: Microsoft.EntityFrameworkCore.Infrastructure[10403]
+      Entity Framework Core 2.2.4-servicing-10062 initialized 'FoodManagementContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT [c].[CategoryID], [c].[IsActive], [c].[Name]
+      FROM [Category] AS [c]
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[2]
+      Executed action method FoodManagementCore.Controllers.CategoryController.Get (FoodManagementCore), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 5.3722ms.
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor[1]
+      Executing ObjectResult, writing value of type '<>f__AnonymousType0`3[[System.Collections.Generic.IEnumerable`1[[FoodManagementCore.Models.Category, FoodManagementCore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Boolean, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[2]
+      Executed action FoodManagementCore.Controllers.CategoryController.Get (FoodManagementCore) in 12.6761ms
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
+      Executed endpoint 'FoodManagementCore.Controllers.CategoryController.Get (FoodManagementCore)'
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 32.1005ms 200 application/json; charset=utf-8
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/2.0 OPTIONS https://localhost:44364/api/user  
+warn: Microsoft.AspNetCore.Cors.Infrastructure.CorsService[11]
+      The CORS protocol does not allow specifying a wildcard (any) origin and credentials at the same time. Configure the policy by listing individual origins if credentials needs to be supported.
+info: Microsoft.AspNetCore.Cors.Infrastructure.CorsService[4]
+      CORS policy execution successful.
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 9.5033ms 204 
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/2.0 GET https://localhost:44364/api/user application/json 
+warn: Microsoft.AspNetCore.Cors.Infrastructure.CorsService[11]
+      The CORS protocol does not allow specifying a wildcard (any) origin and credentials at the same time. Configure the policy by listing individual origins if credentials needs to be supported.
+info: Microsoft.AspNetCore.Cors.Infrastructure.CorsService[4]
+      CORS policy execution successful.
+info: Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler[2]
+      Successfully validated the token.
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[0]
+      Executing endpoint 'FoodManagementCore.Controllers.UserController.Get (FoodManagementCore)'
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[1]
+      Route matched with {action = "Get", controller = "User"}. Executing action FoodManagementCore.Controllers.UserController.Get (FoodManagementCore)
+info: Microsoft.AspNetCore.Authorization.DefaultAuthorizationService[2]
+      Authorization failed.
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[3]
+      Authorization failed for the request at filter 'Microsoft.AspNetCore.Mvc.Authorization.AuthorizeFilter'.
+info: Microsoft.AspNetCore.Mvc.ForbidResult[1]
+      Executing ForbidResult with authentication schemes ().
+info: Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler[13]
+      AuthenticationScheme: Bearer was forbidden.
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[2]
+      Executed action FoodManagementCore.Controllers.UserController.Get (FoodManagementCore) in 8.3164ms
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
+      Executed endpoint 'FoodManagementCore.Controllers.UserController.Get (FoodManagementCore)'
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 27.2155ms 403 

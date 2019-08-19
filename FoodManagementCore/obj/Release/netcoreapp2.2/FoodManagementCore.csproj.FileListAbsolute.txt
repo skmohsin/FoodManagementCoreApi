@@ -1,0 +1,14 @@
+D:\PRACTICE\FoodManagementCore\FoodManagementCore\bin\Release\netcoreapp2.2\FoodManagementCore.deps.json
+D:\PRACTICE\FoodManagementCore\FoodManagementCore\bin\Release\netcoreapp2.2\FoodManagementCore.runtimeconfig.json
+D:\PRACTICE\FoodManagementCore\FoodManagementCore\bin\Release\netcoreapp2.2\FoodManagementCore.runtimeconfig.dev.json
+D:\PRACTICE\FoodManagementCore\FoodManagementCore\bin\Release\netcoreapp2.2\FoodManagementCore.dll
+D:\PRACTICE\FoodManagementCore\FoodManagementCore\bin\Release\netcoreapp2.2\FoodManagementCore.pdb
+D:\PRACTICE\FoodManagementCore\FoodManagementCore\obj\Release\netcoreapp2.2\FoodManagementCore.csprojAssemblyReference.cache
+D:\PRACTICE\FoodManagementCore\FoodManagementCore\obj\Release\netcoreapp2.2\FoodManagementCore.csproj.CoreCompileInputs.cache
+D:\PRACTICE\FoodManagementCore\FoodManagementCore\obj\Release\netcoreapp2.2\FoodManagementCore.RazorAssemblyInfo.cache
+D:\PRACTICE\FoodManagementCore\FoodManagementCore\obj\Release\netcoreapp2.2\FoodManagementCore.RazorAssemblyInfo.cs
+D:\PRACTICE\FoodManagementCore\FoodManagementCore\obj\Release\netcoreapp2.2\FoodManagementCore.AssemblyInfoInputs.cache
+D:\PRACTICE\FoodManagementCore\FoodManagementCore\obj\Release\netcoreapp2.2\FoodManagementCore.AssemblyInfo.cs
+D:\PRACTICE\FoodManagementCore\FoodManagementCore\obj\Release\netcoreapp2.2\FoodManagementCore.RazorTargetAssemblyInfo.cache
+D:\PRACTICE\FoodManagementCore\FoodManagementCore\obj\Release\netcoreapp2.2\FoodManagementCore.dll
+D:\PRACTICE\FoodManagementCore\FoodManagementCore\obj\Release\netcoreapp2.2\FoodManagementCore.pdb
